@@ -1,0 +1,603 @@
+/* You can add global styles to this file, and also import other style files */
+.wrap {
+    position: absolute;
+    height: 100vh;
+}
+
+.rainSec,
+.rain {
+    width: 2em;
+    height: 100vh;
+    position: absolute;
+    left: 5.5em;
+    bottom: 100%;
+    overflow: hidden;
+}
+
+.rain {
+    -webkit-animation: fadeInDown 8s infinite;
+    animation: fadeInDown 8s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.rainSec {
+    -webkit-animation: fadeInDown 8s 2s infinite;
+    animation: fadeInDown 8s 2s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(200%);
+    }
+
+    50.1% {
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(200%);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(200%);
+    }
+
+    50.1% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+.cidade {
+    height: 30px;
+    background: url(../src/assets/img/cidade.svg) repeat-x;
+    background-size: contain;
+}
+
+.btn-gestao,
+.btn-gestao:hover {
+    color: #FFF;
+    padding: 10px;
+    font-size: 0.7rem;
+    margin-top: 26%;
+    border-color: #F6E277;
+    float: right;
+    margin-right: 20px;
+}
+
+footer img {
+    width: 190px;
+    margin-bottom: 20px;
+}
+
+.crie-login .form-control {
+    margin: 20px 0px;
+}
+
+.form-interno .form-control {
+    margin: 20px 0px;
+}
+
+.links-amarelos a {
+    color: #F6E277;
+    text-decoration: none;
+}
+
+.meio-crie {
+    margin: 67px 0px;
+}
+
+.img-agetec {
+    width: 110px;
+    margin-top: 10px;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #005588;
+}
+
+.menu {
+    background: #fde370;
+    margin-top: 15px;
+}
+
+.menu a {
+    color: #005588;
+    font-size: 0.9rem;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    font-weight: bold;
+}
+
+.bg-primary {
+    background-color: #005588 !important;
+}
+
+.border-primary {
+    border-color: #005588 !important;
+}
+
+@media (max-width: 1199.98px) {
+    .m-5 {
+        margin: 10px 0px !important;
+    }
+
+    .links-amarelos a {
+        font-size: 0.9rem;
+    }
+
+    .animacao {
+        margin-left: 0px !important;
+    }
+}
+
+.img-brasao {
+    float: right;
+}
+
+.page-item.active .page-link {
+    background-color: #005588;
+    border-color: #005588;
+}
+
+.page-link {
+    color: #005588;
+}
+
+@media (max-width: 767.98px) {
+
+    h2,
+    .h2 {
+        background: none !important;
+        font-size: 1.4rem !important;
+    }
+
+    .qlik {
+        float: right;
+        margin-top: -60px !important;
+    }
+
+    .foo {
+        margin-right: 25% !important;
+    }
+
+    .pref-foo {
+        margin-left: 70px;
+        width: 200px;
+        float: right;
+    }
+
+    .col-sistema {
+        margin-bottom: 50px;
+    }
+
+    .img-prefcg {
+        margin: initial;
+        width: 250px;
+    }
+
+    .img-agetec {
+        margin-right: 25px;
+    }
+
+    .btn-gestao {
+        margin-top: 6%;
+    }
+
+    h4,
+    .h4 {
+        background: none;
+    }
+
+    .city {
+        height: 98px;
+        margin-top: 120px;
+    }
+
+    .border-bottom {
+        border: none !important;
+    }
+
+    .img-prefcg {
+        margin: 10px 0px !important;
+    }
+
+    .float-end {
+        float: right !important;
+    }
+
+    .menu {
+        margin-top: 0;
+    }
+}
+
+//
+// Código Agetec
+//
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #333;
+    background-color: #FF0080;
+    background-image: radial-gradient(#666cde 0.5px, #FF0080 0.5px);
+    background-size: 10px 10px !important;
+  }
+  .bg-sg {
+    background: #fafafa;
+  }
+  .img-prefcg {
+    height: 120px;
+    margin: 10px 0px 0px 190px;
+  }
+  .row-header {
+    text-transform: uppercase;
+    color: #F6E277;
+  }
+  .row-header h3 {
+     font-weight: 600 !important;
+     padding: 10px;
+  }
+  .crie-login {
+    border-radius: 10px;
+    text-align: left;
+  }
+  .form-interno {
+    border-radius: 10px;
+    text-align: left;
+  }
+  .crie-login h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .btn-custom {
+    font-weight: 400 !important;
+    margin: 5px 0px !important;
+    padding: 14px 0px !important;
+  }
+  .btn-secondary-custom, .btn-secondary-custom:hover {
+    color: #2D549C !important;
+    background: #FFCC00 !important;
+  }
+  .btn-primary-custom, .btn-primary-custom:hover {
+    background: #2D549C !important;
+    color: #FFCC00 !important;
+  }
+  .btn-success-custom {
+    background-color: #4da851 !important;
+  }
+  .btn-gestao, .btn-gestao:hover {
+    color: #FFF;
+    padding: 10px;
+    font-size: 0.7rem;
+    margin-top: 26%;
+    border-color: #F6E277;
+    float: right;
+    margin-right: 20px;
+  }
+  footer img {
+    width: 190px !important;
+    margin-bottom: 20px !important;
+  }
+  .crie-login .form-control {
+    margin: 20px 0px;
+  }
+  .form-interno .form-control {
+    margin: 20px 0px;
+  }
+  .links-amarelos a {
+    color: #F6E277;
+    text-decoration: none;
+  }
+  .meio-crie {
+    margin: 67px 0px;
+  }
+  .img-agetec {
+    width: 110px;
+    margin-top: 10px;
+  }
+   .titulo {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #005588;
+    }
+  .menu {
+    background: #fde370;
+    margin-top: 15px;
+    }
+    .menu a {
+      color: #005588;
+      font-size: 0.9rem;
+    }
+    .accordion-flush .accordion-item .accordion-button {
+      font-weight: bold;
+    }
+    .bg-primary {
+      background-color: #005588 !important;
+    }
+    .border-primary {
+      border-color: #005588 !important;
+    }
+  @media (max-width: 1199.98px)
+  {
+     .m-5 {
+    margin: 10px 0px !important;
+  }
+  .links-amarelos a {
+    font-size: 0.9rem;
+  }
+  .animacao {
+    margin-left: 0px !important;
+  }
+  }
+  .img-brasao {
+    float: right;
+  }
+  .page-item.active .page-link {
+    background-color: #005588;
+    border-color:#005588;
+  }
+  .page-link {
+    color: #005588;
+  }
+  @media (max-width: 767.98px) {
+    h2 {
+      background: none !important ;
+      font-size: 1.4rem !important;
+    }
+    .qlik {
+      float: right;
+      margin-top: -60px !important;
+    }
+    .foo {
+      margin-right: 25% !important;
+    }
+    .pref-foo {
+      margin-left: 70px;
+      width:200px;
+      float: right;
+    }
+    .col-sistema {
+      margin-bottom: 50px;
+    }
+    .img-prefcg {
+      margin: initial;
+      width: 250px;
+    }
+    .img-agetec {
+      margin-right: 25px;
+    }
+    .btn-gestao {
+      margin-top: 6%;
+    }
+    h4 {
+      background: none;
+    }
+    .city {
+      height: 98px;
+      margin-top: 120px;
+    }
+    .border-bottom {
+      border: none !important;
+    }
+    .img-prefcg {
+      margin: 10px 0px !important;
+    }
+    .float-end {
+      float: right !important;
+    }
+    .menu {
+      margin-top: 0;
+    }
+
+  }
+
+  /* Animação */
+  .tracking-in-expand-fwd {
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+
+  /* ----------------------------------------------
+   * Generated by Animista on 2021-7-7 18:8:48
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info.
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+
+  /**
+   * ----------------------------------------
+   * animation tracking-in-expand-fwd
+   * ----------------------------------------
+   */
+  @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  .nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+  }
+
+  .nav-tabs {
+    text-align:center;
+  }
+  a, a:hover {
+    color: #005588;
+  }
+  .bg-menu {
+    background: #F6E277 !important;
+    background-position-y: 100% !important;
+  }
+  .bg-primary {
+      background-color: #005588;
+  }
+  .cidade {
+      height: 30px;
+      background: url(assets/img/cidade.svg) repeat-x;
+      background-size: contain;
+  }
+  a {
+      text-decoration: none !important;
+  }
+.gdf {
+  width:300px;
+}
+.input-01 {
+  background-color: rgba(255, 255, 255, 0.87);
+}
+.label-01 {
+  margin-left: 20px;
+}
+.card-header {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 10px 10px 0px 0px !important;
+}
+.card {
+  background-color: transparent !important;
+}
+.card-body {
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 0px 0px 10px 10px;
+}
+.border-right {
+  border-right: #005588 1px solid;
+}
+.form-floating > .form-select {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.card-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.nav-link {
+  color: #2D549C !important;
+}
+.border-secondary{
+  background-color: #FFF;
+  border-color: rgba(72, 100, 208, 0.77) !important;
+}
+:root {
+  --bg-interno: #f7f8fb;
+  --bg-interno-2: #ffffff;
+}
+
+.bg-interno {
+  background-color: var(--bg-interno);
+}
+
+.bg-interno-2 {
+  background-color: var(--bg-interno-2);
+}
+
+.tema-1 {
+  --bg-interno: #f7f8fb; /* Azul claro */
+  --bg-interno-2: #ffffff; /* Branco */
+}
+
+.tema-2 {
+  --bg-interno: #c0f8ff; /* Azul bebê */
+  --bg-interno-2: #e0e0e0; /* Cinza claro */
+}
+
+.tema-3 {
+  --bg-interno: #ffe5f1; /* Rosa claro */
+  --bg-interno-2: #fafafa; /* Branco suave */
+}
+
+.tema-4 {
+  --bg-interno: #e0ffd4; /* Verde claro */
+  --bg-interno-2: #f0f0f0; /* Cinza muito claro */
+}
+
+.tema-5 {
+  --bg-interno: #fff8e6; /* Amarelo suave */
+  --bg-interno-2: #fdfdfd; /* Branco sutil */
+}
+
+.tema-6 {
+  --bg-interno: #f8e6ff; /* Roxo claro/pastel */
+  --bg-interno-2: #ffffff; /* Branco */
+}
+.card-header {
+  font-size: 0.8rem;
+}
+h5 {
+  font-size: 1.15rem;
+}
+.alternate {
+  font-family: 'Cookie', sans-serif;
+}
+
+.text-bg-dark {
+  background-color: #FF0080;
+  background-image: radial-gradient(#666cde 0.5px, #FF0080 0.5px);
+  background-size: 10px 10px;
+}
+.animacao {
+  margin-left:160px;
+}
+
+.mouse-click {
+  cursor: pointer;
+}
+
+.invalid-feedback {
+  padding-left: 8px !important;
+  text-align: left !important;
+}
+
+.required {
+  color: red;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

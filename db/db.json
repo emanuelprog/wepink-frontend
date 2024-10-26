@@ -1,0 +1,85 @@
+{
+  "artistas": [
+    {
+      "id": "aba6",
+      "nome": "Emanuel Bessa",
+      "nomeArtistico": "teste",
+      "email": "emanuelhamachi@hotmail.com",
+      "telefone": "(99) 9999-9999",
+      "cpf": "708.241.561-37",
+      "cnpj": "99.999.999/9999-99",
+      "rg": "999.999.999",
+      "nascimento": "2001-01-24",
+      "cep": "99999-999",
+      "areaArtistica": "1",
+      "biografia": "asdasdasdsadasda",
+      "release": "sadasdsadasdasdasd",
+      "estilos": [
+        "AFRO"
+      ],
+      "servicos": [
+        "ANIVERSÁRIO"
+      ],
+      "habilidades": [
+        "SANFONA"
+      ],
+      "tema": {
+        "tema": "Tema1"
+      },
+      "fotoDestaque": "C:\\fakepath\\college-life-modern-lifestyle-education-concept-cheerful-good-looking-redhead-female-student-with-foxy-long-hair-wearing-headphones-neck-backpack-smiling-camera.jpg",
+      "galeriaFotos": null,
+      "video1": "https://www.youtube.com/embed/zZZ1JZcqo7g",
+      "video2": "https://www.youtube.com/embed/zZZ1JZcqo7g",
+      "outroEstilo": "",
+      "outroServico": "",
+      "outraHabilidade": "",
+      "facebook": "sadasdasdas",
+      "instagram": "sadsadasd",
+      "youtube": "",
+      "spotify": "",
+      "whatsapp": "asdasdasdsa",
+      "site": "",
+      "d1": false,
+      "d2": false,
+      "d3": false,
+      "tipoPessoa": ""
+    }
+  ],
+  "espacos-culturais": [
+    {
+      "id": "a45c",
+      "nome": "Teste Espaço",
+      "email": "teste@teste.com",
+      "telefone": "(67) 9999-9999",
+      "whatsapp": "(67) 99999-9999",
+      "cep": "79010-040",
+      "logradouro": "Teste Logradouro",
+      "numero": "999",
+      "bairro": "Teste Bairro",
+      "descricao": "Teste Descrição Espaço Cultural",
+      "publicos": [
+        "Pessoas vítimas de violência",
+        "Pessoas em situação de pobreza",
+        "Pessoas em situação de rua (moradores de rua)"
+      ],
+      "medidas": [
+        "Rotas acessíveis, com espaço de manobra para cadeira de rodas"
+      ],
+      "fotoDestaque": "C:\\fakepath\\Captura de tela 2024-02-09 170819.png",
+      "galeriaFotos": null,
+      "video1": "https://www.youtube.com/embed/LoVYSaD9J2o",
+      "video2": "https://www.youtube.com/embed/LoVYSaD9J2o",
+      "facebook": "@testeFacebook",
+      "instagram": "@testeInstagram",
+      "site": "",
+      "responsavel": "sim",
+      "nomeArtisticoResponsavel": "",
+      "razaoSocialResponsavel": "",
+      "nomeFantasiaResponsavel": "",
+      "cepResponsavel": "",
+      "logradouroResponsavel": "",
+      "numeroResponsavel": "",
+      "bairroResponsavel": ""
+    }
+  ]
+}
