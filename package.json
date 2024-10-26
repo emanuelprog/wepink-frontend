@@ -1,5 +1,5 @@
 {
-  "name": "maiscultura",
+  "name": "wepink",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -35,13 +35,13 @@
     "keycloak-angular": "^16.0.1",
     "keycloak-js": "^25.0.1",
     "lottie-web": "^5.12.2",
-    "maiscultura": "file:",
     "moment-timezone": "^0.5.45",
     "ngx-lottie": "^12.0.0",
     "ngx-mask": "^17.1.8",
     "replace-in-file": "^8.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "wepink": "file:",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {

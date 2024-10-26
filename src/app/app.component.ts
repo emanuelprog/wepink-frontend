@@ -8,7 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  title = 'maiscultura';
+  title = 'wepink';
   logado : boolean = false;
   artista: any | undefined;
   temArtista: boolean = false;

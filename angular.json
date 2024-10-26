@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "maiscultura": {
+    "wepink": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/maiscultura",
+            "outputPath": "dist/wepink",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -119,13 +119,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "maiscultura:build:production"
+              "browserTarget": "wepink:build:production"
             },
             "development": {
-              "browserTarget": "maiscultura:build:development"
+              "browserTarget": "wepink:build:development"
             },
             "homolog": {
-              "browserTarget": "maiscultura:build:homolog"
+              "browserTarget": "wepink:build:homolog"
             }
           },
           "defaultConfiguration": "development"
@@ -133,7 +133,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "maiscultura:build"
+            "browserTarget": "wepink:build"
           }
         },
         "test": {
