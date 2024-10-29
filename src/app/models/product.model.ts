@@ -1,13 +1,14 @@
 import { FormGroup } from "@angular/forms";
+import { Movement } from "./movement.model";
 
 export interface Product {
     id?: number;
     name?: string;
     quantity?: number;
-    changeDate?: Date;
-    image?: string;
-    addQuantity?: number;
-    subtractQuantity?: number;
+    quantityAudited?: number;
+    movement?: Movement;
+    codProduct?: number;
+    addQuantityAudited?: number;
   }
 
   export class Product implements Product {
@@ -15,18 +16,10 @@ export interface Product {
       public id?: number,
       public name?: string,
       public quantity?: number,
-      public changeDate?: Date,
-      public image?: string
+      public quantityAudited?: number,
+      public movement?: Movement,
+      public codProduct?: number,
+      public addQuantityAudited?: number
     ) { }
-
-    static convertFormToProduct(form: FormGroup): Product {
-      return new Product(
-          parseInt(form.get('id')?.value || undefined),
-          form.get('name')?.value || undefined,
-          parseInt(form.get('quantity')?.value || undefined),
-          undefined,
-          form.get('image')?.value || undefined
-      );
-  }
   }
 

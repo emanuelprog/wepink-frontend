@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NewProductComponent } from './new-product/new-product.component';
-import { StockComponent } from './stock/stock.component';
+import { MovementComponent } from './movement/movement.component';
+import { SeeMovementComponent } from './see-movement/see-movement.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/stock', pathMatch: 'full' },
-  { path: 'stock', component: StockComponent },
-  { path: 'new-product', component: NewProductComponent },
-  { path: '**', redirectTo: 'stock' }
+  { path: '', redirectTo: '/movement', pathMatch: 'full' },
+  { path: 'movement', component: MovementComponent },
+  { path: 'see-movement', component: SeeMovementComponent },
+  { path: '**', redirectTo: 'movement' }
 ];
 
 @NgModule({

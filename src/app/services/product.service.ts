@@ -11,19 +11,15 @@ import { Product } from '../models/product.model';
 export class ProductService {
   constructor(private http: HttpClient) { }
 
-  saveProduct(data: Product): Observable<HttpResponse<ResponseDTO>> {
+  saveProducts(data: Product[]): Observable<HttpResponse<ResponseDTO>> {
     return this.http.post<ResponseDTO>(environment.ambiente + 'product', data, { observe: 'response' });
   }
 
-  getAllProducts(): Observable<HttpResponse<ResponseDTO>> {
-    return this.http.get<ResponseDTO>(environment.ambiente + 'product', { observe: 'response' });
+  getProductsByMovementId(id: number): Observable<HttpResponse<ResponseDTO>> {
+    return this.http.get<ResponseDTO>(environment.ambiente + `product/${id}`, { observe: 'response' });
   }
 
-  plusQuantityProduct(id: number, amount: number): Observable<HttpResponse<ResponseDTO>> {
-    return this.http.put<ResponseDTO>(`${environment.ambiente}product/plus/${id}/${amount}`, {}, { observe: 'response' });
-  }
-
-  minusQuantityProduct(id: number, amount: number): Observable<HttpResponse<ResponseDTO>> {
-    return this.http.put<ResponseDTO>(`${environment.ambiente}product/minus/${id}/${amount}`,{},{ observe: 'response' });
+  addQuantityAudited(id: number, quantity: number): Observable<HttpResponse<ResponseDTO>> {
+    return this.http.put<ResponseDTO>(`${environment.ambiente}product/add-audited/${id}/${quantity}`, {}, { observe: 'response' });
   }
 }

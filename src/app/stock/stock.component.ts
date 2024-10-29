@@ -27,7 +27,7 @@ export class StockComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.findProducts();
+    // this.findProducts();
   }
 
   findProducts() {
@@ -51,46 +51,46 @@ export class StockComponent implements OnInit {
     );
   }
 
-  getImageSrc(product: Product): string {
-    if (product.image) {
-        return `data:image/jpeg;base64,${product.image}`;
-    }
-    return '';
-  }
+  // getImageSrc(product: Product): string {
+  //   if (product.image) {
+  //       return `data:image/jpeg;base64,${product.image}`;
+  //   }
+  //   return '';
+  // }
 
-  increaseStock(product: Product) {
-    if (product.id && product.addQuantity !== undefined && product.addQuantity > 0) {
-      this.productService.plusQuantityProduct(product.id, product.addQuantity).subscribe({
-        next: (response: HttpResponse<ResponseDTO>) => {
-          this.onMessage(response.body?.msg!, '', 2000);
-          product.addQuantity = undefined;
-          this.findProducts();
-        },
-        error: (error) => {
-          this.onMessage(error.error.message, '', 2000);
-        }
-      });
-    } else {
-      this.onMessage('Insira uma quantidade válida para adicionar', '', 2000);
-    }
-  }
+  // increaseStock(product: Product) {
+  //   if (product.id && product.addQuantity !== undefined && product.addQuantity > 0) {
+  //     this.productService.plusQuantityProduct(product.id, product.addQuantity).subscribe({
+  //       next: (response: HttpResponse<ResponseDTO>) => {
+  //         this.onMessage(response.body?.msg!, '', 2000);
+  //         product.addQuantity = undefined;
+  //         this.findProducts();
+  //       },
+  //       error: (error) => {
+  //         this.onMessage(error.error.message, '', 2000);
+  //       }
+  //     });
+  //   } else {
+  //     this.onMessage('Insira uma quantidade válida para adicionar', '', 2000);
+  //   }
+  // }
 
-  decreaseStock(product: Product) {
-    if (product.id && product.subtractQuantity !== undefined && product.subtractQuantity > 0) {
-      this.productService.minusQuantityProduct(product.id, product.subtractQuantity).subscribe({
-        next: (response: HttpResponse<ResponseDTO>) => {
-          this.onMessage(response.body?.msg!, '', 2000);
-          product.subtractQuantity = undefined;
-          this.findProducts();
-        },
-        error: (error) => {
-          this.onMessage(error.error.message, '', 2000);
-        }
-      });
-    } else {
-      this.onMessage('Insira uma quantidade válida para diminuir', '', 2000);
-    }
-  }
+  // decreaseStock(product: Product) {
+  //   if (product.id && product.subtractQuantity !== undefined && product.subtractQuantity > 0) {
+  //     this.productService.minusQuantityProduct(product.id, product.subtractQuantity).subscribe({
+  //       next: (response: HttpResponse<ResponseDTO>) => {
+  //         this.onMessage(response.body?.msg!, '', 2000);
+  //         product.subtractQuantity = undefined;
+  //         this.findProducts();
+  //       },
+  //       error: (error) => {
+  //         this.onMessage(error.error.message, '', 2000);
+  //       }
+  //     });
+  //   } else {
+  //     this.onMessage('Insira uma quantidade válida para diminuir', '', 2000);
+  //   }
+  // }
 
   private onMessage(message: string, action: string, duration: number) {
     this.snackBar.open(message, action, { duration: duration, verticalPosition: 'top', horizontalPosition: 'left' })

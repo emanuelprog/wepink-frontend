@@ -121,16 +121,16 @@ export class NewProductComponent {
 
   onSubmit() {
     if (this.form.valid) {
-      this.productService.saveProduct(Product.convertFormToProduct(this.form)).subscribe({
-        next: (response) => {
-          this.onMessage(response.body?.msg!, '', 2000);
-          this.form.reset();
-          this.router.navigateByUrl("/home");
-        },
-        error: (error) => {
-          this.onMessage(error.error.message, '', 2000);
-        }
-      });
+      // this.productService.saveProduct(Product.convertFormToProduct(this.form)).subscribe({
+      //   next: (response) => {
+      //     this.onMessage(response.body?.msg!, '', 2000);
+      //     this.form.reset();
+      //     this.router.navigateByUrl("/home");
+      //   },
+      //   error: (error) => {
+      //     this.onMessage(error.error.message, '', 2000);
+      //   }
+      // });
     } else {
       this.form.markAllAsTouched();
     }
